@@ -17,9 +17,12 @@ systemctl --user mask wireplumber.service
 
 sudo pacman -Rdd pipewire-pulse 
 sudo pacman -S pulseaudio pulseaudio-bluetooth
+sudo pacman -Rns garuda-pipewire pipewire-pulse pipewire-alsa  pipewire-jack
+sudo pacman -Rns pipewire garuda-pipewire pipewire-pulse pipewire-alsa pipewire-media-session gst-plugin-pipewire pipewire-jack
 
 
 paru -S ttf-font-awesome ttf-font-awesome-4 ttf-material-desing-icons
+
 
 localectl set-x11-keymap es
 ```
